@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+	<script>
+		$(function() {
+//			var targetObj = {};
+//			var obj = {
+//				id: 1,
+//				name: "Lin"
+//			}
+//			$.extend(targetObj, obj);
+//			console.log(targetObj);
+			var targetObj = {
+				id: 0,
+				msg: {
+					sex: "boy"
+				}
+			};
+			var obj = {
+				id: 1,
+				name: "Lin",
+				msg: {
+					sex: "girl",
+					age: 18
+				}
+			}
+//			$.extend(targetObj, obj);
+			$.extend(true, targetObj, obj);
+			console.log(targetObj);
+		})
+	</script>
+</head>
+
+<body>
+</body>
+</html>

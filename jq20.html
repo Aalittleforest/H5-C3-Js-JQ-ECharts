@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+	</style>
+	<script>
+		$(function() {
+			$(document).on('click', function() {
+				console.log('click!');
+			});
+			$('div').on('click', function(e) {
+				console.log(e);
+				e.stopPropagation();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div></div>
+</body>
+</html>

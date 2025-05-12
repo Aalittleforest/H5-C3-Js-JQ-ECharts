@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+</head>
+
+<body>
+	I'm Lin
+	<button>Fast</button>
+	<button>Fast</button>
+	<button>Fast</button>
+	<button>Fast</button>
+	<button>Fast</button>
+	<button>Fast</button>
+	<script>
+		$(function() {
+			$('button').click(function() {
+//				$(this).css('colot', 'red');
+//				$(this).siblings().css('color', '');
+//				$(this).css('color', 'red').siblings().css('color', '');
+				$(this).siblings().parent().css({
+					color:'pink',
+					fontSize:20
+				});
+			});
+		})
+	</script>
+</body>
+</html>

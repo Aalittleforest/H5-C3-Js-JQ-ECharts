@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+	<h2>
+		简单计时器
+	</h2>
+	<input type="button" value="开始计时" onClick="time_Begin()">
+	<input type="button" value="暂停计时" onClick="stop_Count()">
+	<input type="text" id="number">
+	<input type="button" value="重新计时" onClick="again_Count()">
+	<script>
+		var x = 0;
+		var t;
+		function time_Begin() {
+			document.getElementById('number').value = x;
+			x = x + 1;
+			t = setTimeout("time_Begin()", 1000);
+		}
+		function again_Count() {
+			x = 0;
+			setTimeout("document.getElementById('number').value = 0", 0);
+			clearTimeout(t);
+		}
+		function stop_Count() {
+			if(x > 0) {
+				setTimeout("document.getElementById('number').value = x - 1", 0);
+				clearTimeout(t);
+			} else {
+				setTimeout("document.getElementById('number').value = 0", 0);
+				clearTimeout(t);
+			}
+		}
+	</script>
+</body>
+</html>

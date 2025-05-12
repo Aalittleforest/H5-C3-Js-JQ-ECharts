@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+        div {
+            width: 150px;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+    <script src="jQuery/jquery.min.js"></script>
+</head>
+
+<body>
+	<button>显示</button>
+    <button>隐藏</button>
+    <button>切换</button>
+    <div></div>
+	<script>
+		$(function() {
+			$('button').eq(1).click(function() {
+				$('div').hide('slow', 'linear', function() {
+					alert(11);
+				});
+			});
+			$('button').eq(0).click(function() {
+				$('div').show('slow', 'linear', function() {
+					alert(11);
+				});
+			});
+			$('button').eq(2).click(function() {
+				$('div').toggle('slow', 'linear', function() {
+					alert(22);
+				});
+			});
+		})
+	</script>
+</body>
+</html>

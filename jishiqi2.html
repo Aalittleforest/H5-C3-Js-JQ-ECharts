@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>document</title>
+	<style>
+		
+	</style>
+</head>
+
+<body>
+	<h3>简单计时器</h3>
+	<button class="begin">开始计时</button>
+	<button class="stop">暂停计时</button>
+	<button class="reset">重置计时</button>
+	<p id="p1">0</p>
+	<script>
+		var begin = document.querySelector(".begin");
+		var stop = document.querySelector(".stop");
+		var reset = document.querySelector(".reset");
+		var p1 = document.getElementById("p1");
+		var timer = null;
+		var x = 0;
+		begin.addEventListener('click', function() {
+			begin.disabled = true;
+			reset.disabled = true;
+		})
+		begin.addEventListener('click', function() {
+			timer = setInterval(function() {
+				x = x + 1;
+				p1.innerHTML = x;
+			}, 1000)
+		})
+		stop.addEventListener('click', function() {
+			clearInterval(timer);
+			begin.disabled = false;
+			reset.disabled = false;
+		})
+		reset.addEventListener('click', function() {
+			x = 0;
+			timer = 0;
+			p1.innerHTML = x;
+			begin.disabled = false;
+			reset.disabled = false;
+		})
+	</script>
+</body>
+</html>

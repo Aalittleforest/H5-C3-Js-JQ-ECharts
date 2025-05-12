@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<a href="https://www.bilibili.com" title="yoxi"></a>
+	<input type="checkbox" checked>
+	<div index="1"></div>
+	<script>
+		$(function() {
+			console.log($('a').prop('href'));
+			$('a').prop('title', 'fuck');
+			$('input').change(function() {
+				console.log($(this).prop('checked '));
+			});
+			console.log($('div').attr('index'));
+		})
+	</script>
+</body>
+</html>

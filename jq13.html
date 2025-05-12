@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+</head>
+
+<body>
+	<div>
+		<span>I'm content.</span>
+	</div>
+	<input type="text" value="please input your content.">
+	<script>
+		console.log($('div').html());
+		$('div').html(123);
+		console.log($('div').text());
+		console.log($('input').val());
+	</script>
+</body>
+</html>

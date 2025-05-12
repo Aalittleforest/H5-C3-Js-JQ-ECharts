@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+	<style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+	<script>
+		$(function() {
+			$('div').on('click', function() {
+				alert(11);
+			});
+//			$('div').click();
+//			$('div').trigger('click');
+			$('div').triggerHandler('click');
+			$('input').on('focus', function() {
+				$(this).val('Hello');
+			});
+			$('input').triggerHandler('focus');
+//			$('input').trigger('focus');
+		});
+	</script>
+</head>
+
+<body>
+	<div></div>
+    <input type="text">
+</body>
+</html>

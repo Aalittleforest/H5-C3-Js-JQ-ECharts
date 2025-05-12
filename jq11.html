@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+	<style>
+		div{
+			width: 150px;
+			height: 150px;
+			background-color: pink;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+	<button>Move</button>
+	<div></div>
+	<script>
+		$(function() {
+			$('button').click(function() {
+				$('div').animate({
+					left: 500 + 'px',
+					top: 300 + 'px',
+					opacity: 0.5
+				}, 500);
+			});
+		})
+	</script>
+</body>
+</html>

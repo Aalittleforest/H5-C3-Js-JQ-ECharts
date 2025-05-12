@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="father">
+		<div class="son">son</div>
+	</div>
+	<div class="nav">
+		<p>I'm the p</p>
+		<div>
+			<p>I'm p</p>
+		</div>
+	</div>
+	<script>
+		$(function() {
+			console.log($('.son').parent());
+		});
+	</script>
+</body>
+</html>

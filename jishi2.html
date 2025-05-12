@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+	<h2>
+		简单计时器
+	</h2>
+	<button class="begin">开始定时器</button>
+	<button class="stop">停止定时器</button>
+	<button class="reset">重置定时器</button>
+	<p id="p1">0</p>
+	<script>
+		var x = 0;
+		var reset = document.querySelector('.reset');
+		var start = document.querySelector('.begin');
+		var stop = document.querySelector('.stop');
+		var timer = null; //null是一个空对象
+		start.addEventListener('click', function() {
+			start.disabled = true;
+			reset.disabled = true;
+			timer = setInterval(function() {
+				x = x + 1;
+				document.getElementById('p1').innerHTML = x;
+			}, 1000);
+		});
+		stop.addEventListener('click', function() {
+			reset.disabled = false;
+			clearInterval(timer);
+		});
+		reset.addEventListener('click', function() {
+			x = 0;
+			start.disabled = false;
+			
+			document.getElementById('p1').innerHTML = x;
+			
+		});
+	</script>
+</body>
+</html>

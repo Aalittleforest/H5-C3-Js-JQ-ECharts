@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<div></div>
+	<ul>
+		<li>i'm li</li>
+		<li>i'm li</li>
+		<li>i'm li</li>
+		<li>i'm li</li>
+	</ul>
+	<ol>
+		
+	</ol>
+	<script>
+		$(function() {
+//			$('div').click(function() {
+//				$(this).css('background', 'purple');
+//			});
+//			$('div').mouseenter(function() {
+//				$(this).css('background', 'skyblue');
+//			});
+			$('div').on({
+				mouseenter: function() {
+					$(this).css('background', 'skyblue');
+				},
+				click: function() {
+					$(this).css('background', 'purple');
+				}
+			});
+			$('ul').on('click', 'li', function() {
+				alert('fufu');
+			});
+			$('ol').on('click', 'li', function() {
+				alert(22);
+			});
+			var lis = $("<li>i'm the news li</li>");
+			$('ol').append(lis);
+		});
+	</script>
+</body>
+</html>

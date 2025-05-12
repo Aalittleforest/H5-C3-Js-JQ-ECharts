@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+</head>
+
+<body>
+	<button>Fast</button>
+	<button>Fast</button>
+	<button>Fast</button>
+	<button>Fast</button>
+	<button>Fast</button>
+	<script>
+		$(function() {
+			$('button').click(function() {
+				$(this).css('background', 'pink');
+				$(this).siblings('button').css('background', '');
+			});
+		})
+	</script>
+</body>
+</html>

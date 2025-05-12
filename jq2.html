@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+</head>
+
+<body>
+	<div>I'm div</div>
+	<div class="nav">I'm nav</div>
+	<p>I'm p</p>
+	<ol>
+		<li>ol</li>
+		<li>ol</li>
+		<li>ol</li>
+		<li>ol</li>
+	</ol>
+	<ul>
+		<li>ul</li>
+		<li>ul</li>
+		<li>ul</li>
+		<li>ul</li>
+	</ul>
+	<script>
+		$(function() {
+			console.log($(".nav"));
+			$('.nav').css('background', 'pink')
+			$('ul li:first').css('color', 'red');
+			$('ul li:eq(2)').css('color', 'yellow');
+			$('ol li:odd').css('color', 'pink');
+			$('ol li:even').css('color', 'purple');
+		});
+	</script>
+</body>
+</html>

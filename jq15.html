@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script src="jQuery/jquery.min.js"></script>
+</head>
+
+<body>
+	<ul>
+		<li>orgin li</li>
+	</ul>
+	<div class="test">orgin div</div>
+	<script>
+		$(function() {
+			var li = $('<li>after li</li>');
+//			$('ul').append(li);
+			$('ul').prepend(li);
+		})
+	</script>
+</body>
+</html>
