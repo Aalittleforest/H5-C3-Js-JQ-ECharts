@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+		var num = prompt('请输入班级人数：');
+		var all = 0;
+		var average = 0;
+		for (var i = 1; i <=num; i++) {
+			var mark = prompt('请输入第' + i + '个学生的成绩：');
+			all = all + parseFloat(mark);
+		}
+		average = all / num;
+		alert('总分' + all);
+		alert('平均分' + average);
+	</script>
+</head>
+
+<body>
+</body>
+</html>
