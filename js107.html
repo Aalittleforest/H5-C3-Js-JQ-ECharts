@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		div {
+			width: 300px;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			background-color: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<button>显示当前系统时间</button>
+	<div>时间</div>
+	<p>1123</p>
+	<script>
+		function getDate() {
+			var date = new Date();
+		    var year = date.getFullYear();
+		    var month = date.getMonth();
+		    var dates = date.getDate();
+			var arr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+			var day = date.getDay();
+			return '今天是：' + year + '年' + month + '月' + dates + '日' + arr[day];
+		}
+		var btn = document.querySelector('button');
+		var div = document.querySelector('div');
+		btn.onclick = function() {
+			div.innerText = getDate();
+		}
+		//
+		var p = document.querySelector('p');
+		p.innerText = getDate();
+	</script>
+</body>
+</html>

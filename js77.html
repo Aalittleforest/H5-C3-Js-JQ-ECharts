@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+		function get(min,max) {
+			min = Math.ceil(min);
+			max = Math.floor(max);
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+		var radom = get(1, 10);
+		while(true) { //死循环
+			  var num = prompt('猜猜看1~10之间的数字');
+			if (num > radom) {
+				alert('大了');
+			} else if (num < radom) {
+				alert('小了');
+			} else {
+				alert('啊对对对');
+				break;
+			}
+		}
+	</script>
+</head>
+
+<body>
+</body>
+</html>

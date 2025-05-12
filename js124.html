@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <ul>
+        <li>123</li>
+    </ul>
+    <script>
+        var li = document.createElement('li');
+        var ul = document.querySelector('ul');
+        ul.appendChild(li);
+        var lili = document.createElement('li')
+        ul.insertBefore(lili, ul.children[0]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<div></div>
+	<script>
+		var div = document.querySelector('div');
+		var flag = 0;
+		div.onclick  = function() {
+//			div.style
+			if (flag == 0){
+				this.style.backgroundColor = 'skyblue';
+				flag = 1;
+			} else {
+				this.style.backgroundColor = 'pink';
+				flag = 0;
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+	<ul>
+		<li>知否知否，应是绿肥红瘦。1</li>
+		<li>知否知否，应是绿肥红瘦。2</li>
+		<li>知否知否，应是绿肥红瘦。3</li>
+		<li>知否知否，应是绿肥红瘦。4</li>
+		<li>知否知否，应是绿肥红瘦。5</li>
+		<li>知否知否，应是绿肥红瘦。6</li>
+	</ul>
+	<ol>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ol>
+	<script>
+		var lis = document.getElementsByTagName('li');
+		console.log(lis);
+		console.log(lis[0]);
+		for (var i = 0; i < lis.length; i++) {
+			console.log(lis[i]);
+		}
+		var ol = document.getElementsByTagName('ol'); //[ol]
+		console.log(ol[0].getElementsByTagName('li'));
+		//<ol id="ol>
+//		</ol>
+	</script>
+</body>
+</html>

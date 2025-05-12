@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('click', function(e) {
+            console.log(e.clientX);
+            console.log(e.clientY);
+            console.log('-------------');
+            console.log(e.pageX);
+            console.log(e.pageY);
+            console.log('-------------');
+            console.log(e.screenX);
+            console.log(e.screenY);
+            console.log('-------------');
+            console.log('-------------');
+        }, false)
+    </script>
+</body>
+</html>

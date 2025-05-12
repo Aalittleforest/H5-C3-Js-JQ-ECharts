@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>123</div>
+    <script>
+        var div = document.querySelector('div');
+        div.onclick = function(e) {
+            // console.log(e);
+            // console.log(window.event);
+            e = e || window.event;
+            console.log(e);
+        }
+        // div.addEventListener('click', function(event){
+        //     console.log(event);
+        // })
+    </script>
+</body>
+</html>

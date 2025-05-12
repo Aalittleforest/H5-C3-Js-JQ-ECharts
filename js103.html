@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div class="box">盒子1</div>
+	<div class="box">盒子2</div>
+	<div id="nav">
+		<ul>
+			<li>首页</li>
+			<li>产品</li>
+		</ul>
+	</div>
+	<script>
+		var boxs = document.getElementsByClassName('box');
+		console.log(boxs);
+		//
+		var firstBox = document.querySelector('.box');
+		console.log(firstBox);
+		var nav = document.querySelector('#nav');
+		console.log(nav);
+		var li = document.querySelector('li');
+		console.log(li);
+		//
+		var allBox = document.querySelectorAll('.box');
+		console.log(allBox);
+		var liss = document.querySelectorAll('li');
+		console.log(liss);
+	</script>
+</body>
+</html>

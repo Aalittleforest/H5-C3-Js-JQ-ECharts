@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+		var myMath = {
+			PI: 3.141592653,
+			max: function() {
+				var max = arguments[0];
+				for (var i = 1; i < arguments.length; i++) {
+					if (arguments[i] > max) {
+						max = arguments[i];
+					}
+				}
+				return max;
+			},
+			min: function() {
+				var min = arguments[0];
+				for (var i = 1; i < arguments.length; i++) {
+					if (arguments[i] < min) {
+						min = arguments[i];
+					}
+				}
+				return min;
+			}
+		}
+		console.log(myMath.PI);
+		console.log(myMath.max(1,9));
+		console.log(myMath.min(1,9));
+	</script>
+</head>
+
+<body>
+</body>
+</html>

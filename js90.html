@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script>
+//		function unique(arr) {
+//		    var newArr = [];
+//		    for (var i = 0; i <= arr.length; i++) {
+//			    if (newArr.indexOf(arr[i]) === - 1) {
+//					newArr.push(arr[i]);
+//				}
+//		    }
+//			return demo;
+//		}
+//		var demo = unique(['c','a','z','a','x','a','x','c','b'])
+//		console.log(demo);
+		function unique(arr) {
+			var newArr = [];
+			for (var i = 0; i < arr.length; i++) {
+				if (newArr.indexOf(arr[i]) === -1) {
+					newArr.push(arr[i]);
+				}
+			}
+			return newArr;
+		}
+		var demo = unique(['c','a','z','a','x','a','x','c','b']);
+		console.log(demo);
+	</script>
+</head>
+
+<body>
+</body>
+</html>
