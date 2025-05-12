@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div></div>
+	<script>
+//		console.log(location.search);
+		var params = location.search.substr(1);
+//		console.log(params);
+		var arr = params.split('=');
+		console.log(arr);
+		var div = document.querySelector('div');
+		div.innerHTML = arr[1] + '欢迎！';
+	</script>
+</body>
+</html>

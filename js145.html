@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <input type="search" placeholder="请输入您需要的东西"/>
+    <script>
+        var search = document.querySelector('input')
+        document.addEventListener('keyup', function(e) {
+            if(e.keyCode === 83) {
+                search.focus();
+            }
+        });
+    </script>
+</body>
+</html>

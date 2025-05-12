@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+        div {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+		span{
+			position: absolute;
+			left: 0;
+			display: block;
+			width: 150px;
+			height: 150px;
+			background-color: purple;
+			margin-top: 250px;
+		}
+    </style>
+</head>
+
+<body>
+	<div></div>
+	<span></span>
+	<script>
+		function animate(obj, target) {
+			var timer = setInterval(function() {
+				if(obj.offsetLeft >= target) {
+					clearInterval(timer);
+				}
+				obj.style.left = obj.offsetLeft + 1 + 'px';
+			}, 30);
+		}
+		var div = document.querySelector('div');
+		
+		var span = document.querySelector('span');
+		animate(div, 300);
+		animate(span, 200);
+	</script>
+</body>
+</html>

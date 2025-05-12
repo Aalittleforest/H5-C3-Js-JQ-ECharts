@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        // document.onkeyup = function() {
+        //     console.log('one');
+        // }
+        document.addEventListener('keyup', function() {
+            console.log('one');
+        });
+        document.addEventListener('keydown', function() {
+            console.log('two');
+        });
+        document.addEventListener('keypress', function() {
+            console.log('three');
+        })
+    </script>
+</body>
+</html>

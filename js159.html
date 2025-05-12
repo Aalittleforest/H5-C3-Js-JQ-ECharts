@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			margin: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+	</div>
+	<script>
+		var box = document.querySelector('.box');
+		box.addEventListener('mousemove', function(e) {
+//			console.log(e.pageX);
+//			console.log(e.pageY);
+//			console.log(box.offsetTop);
+//			console.log(box.offsetLeft);
+			var x = e.pageX - this.offsetLeft;
+			var y = e.pageY - this.offsetTop;
+			this.innerHTML = 'x是' + x + 'y是' + y;
+		})
+	</script>
+</body>
+</html>
